@@ -1,0 +1,7 @@
+%h1 JULIAN'S SITE FUCK YEAH
+%p= link_to 'Put some magic down', new_idea_path
+-@ideas.each do |idea|
+  %ul
+    %li= idea.description
+    =link_to 'Edit this idea', edit_idea_path(idea)
+    =link_to 'Trash this idea', idea_path(idea), method: :delete

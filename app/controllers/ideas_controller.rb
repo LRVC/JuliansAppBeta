@@ -34,7 +34,7 @@ class IdeasController < ApplicationController
 
   def destroy
     @idea.destroy
-    redirect_to root_path, notice: "That was a bad idea anyway. Good call."
+    redirect_to root_path, notice: "We killed it with fire for you."
   end
 
   private
